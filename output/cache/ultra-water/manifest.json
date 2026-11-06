@@ -1,0 +1,461 @@
+{
+  "671e7670245916a3f29b36642be41aeb7792e494f00ca5a2a08ad0c484c226b4": {
+    "tile": 1,
+    "key": "671e7670245916a3f29b36642be41aeb7792e494f00ca5a2a08ad0c484c226b4",
+    "settings": {
+      "sheetSize": 80,
+      "peakWaves": 1,
+      "heightGain": 0.72,
+      "alignment": 0.25,
+      "tau": 1.15,
+      "choppiness": 1,
+      "opposingDamping": 0.5,
+      "seed": 1337,
+      "foamBias": 0.05,
+      "foamScale": 1.3,
+      "foamRecovery": 0.7,
+      "billow": 1,
+      "spray": 0.65,
+      "motionBlur": true,
+      "shutter": 0.5,
+      "depthOfField": true,
+      "aperture": 0.22,
+      "grain": true,
+      "grainStrength": 0.018,
+      "scatter": [
+        0.004,
+        0.018,
+        0.017
+      ],
+      "absorption": [
+        0.4,
+        0.12,
+        0.1
+      ],
+      "emberWaterGain": 0.18,
+      "glintStrength": 0.2,
+      "studioHighlightStrength": 0.45
+    },
+    "brewing": {
+      "warmCycles": 2,
+      "frameZeroMaxDiff": [
+        null,
+        0.731689453125,
+        0
+      ],
+      "steps": 363
+    },
+    "sizes": {
+      "foam": 39903729,
+      "spray": 908301
+    }
+  },
+  "ab6cad867a26e7a95b894627253f4a0b0acd08fea50181f77930822bff83d7bf": {
+    "tile": 2,
+    "key": "ab6cad867a26e7a95b894627253f4a0b0acd08fea50181f77930822bff83d7bf",
+    "settings": {
+      "sheetSize": 80,
+      "peakWaves": 1,
+      "heightGain": 1,
+      "alignment": 0.25,
+      "tau": 1.15,
+      "choppiness": 1,
+      "opposingDamping": 0.5,
+      "seed": 1337,
+      "foamBias": 0.05,
+      "foamScale": 1.3,
+      "foamRecovery": 0.7,
+      "billow": 1,
+      "spray": 0.65,
+      "motionBlur": true,
+      "shutter": 0.5,
+      "depthOfField": true,
+      "aperture": 0.22,
+      "grain": true,
+      "grainStrength": 0.018,
+      "scatter": [
+        0.004,
+        0.018,
+        0.017
+      ],
+      "absorption": [
+        0.4,
+        0.12,
+        0.1
+      ],
+      "emberWaterGain": 0.18,
+      "glintStrength": 0.2,
+      "studioHighlightStrength": 0.45
+    },
+    "brewing": {
+      "warmCycles": 2,
+      "frameZeroMaxDiff": [
+        null,
+        0.982330322265625,
+        0
+      ],
+      "steps": 363
+    },
+    "sizes": {
+      "foam": 41489570,
+      "spray": 922416
+    }
+  },
+  "5c037b44a156f793c160a63cc97ee62b7969864b8982028d326c7f4d081f686e": {
+    "tile": 3,
+    "key": "5c037b44a156f793c160a63cc97ee62b7969864b8982028d326c7f4d081f686e",
+    "settings": {
+      "sheetSize": 80,
+      "peakWaves": 1,
+      "heightGain": 1.35,
+      "alignment": 0.25,
+      "tau": 1.15,
+      "choppiness": 1,
+      "opposingDamping": 0.5,
+      "seed": 1337,
+      "foamBias": 0.05,
+      "foamScale": 1.3,
+      "foamRecovery": 0.7,
+      "billow": 1,
+      "spray": 0.65,
+      "motionBlur": true,
+      "shutter": 0.5,
+      "depthOfField": true,
+      "aperture": 0.22,
+      "grain": true,
+      "grainStrength": 0.018,
+      "scatter": [
+        0.004,
+        0.018,
+        0.017
+      ],
+      "absorption": [
+        0.4,
+        0.12,
+        0.1
+      ],
+      "emberWaterGain": 0.18,
+      "glintStrength": 0.2,
+      "studioHighlightStrength": 0.45
+    },
+    "brewing": {
+      "warmCycles": 2,
+      "frameZeroMaxDiff": [
+        null,
+        1.607421875,
+        0
+      ],
+      "steps": 363
+    },
+    "sizes": {
+      "foam": 43384533,
+      "spray": 931261
+    }
+  },
+  "0dc56b612c47d31579972c0e41a0afc99075d45ea82352c12aa42f14c06d07e8": {
+    "tile": 4,
+    "key": "0dc56b612c47d31579972c0e41a0afc99075d45ea82352c12aa42f14c06d07e8",
+    "settings": {
+      "sheetSize": 80,
+      "peakWaves": 2,
+      "heightGain": 0.72,
+      "alignment": 0.25,
+      "tau": 1.15,
+      "choppiness": 1,
+      "opposingDamping": 0.5,
+      "seed": 1337,
+      "foamBias": 0.05,
+      "foamScale": 1.3,
+      "foamRecovery": 0.7,
+      "billow": 1,
+      "spray": 0.65,
+      "motionBlur": true,
+      "shutter": 0.5,
+      "depthOfField": true,
+      "aperture": 0.22,
+      "grain": true,
+      "grainStrength": 0.018,
+      "scatter": [
+        0.004,
+        0.018,
+        0.017
+      ],
+      "absorption": [
+        0.4,
+        0.12,
+        0.1
+      ],
+      "emberWaterGain": 0.18,
+      "glintStrength": 0.2,
+      "studioHighlightStrength": 0.45
+    },
+    "brewing": {
+      "warmCycles": 2,
+      "frameZeroMaxDiff": [
+        null,
+        0.732421875,
+        0
+      ],
+      "steps": 363
+    },
+    "sizes": {
+      "foam": 39637619,
+      "spray": 899055
+    }
+  },
+  "dc9611fbd841e34b3453c10f9714ecb386405bddbdab15d6dc1a95e715fb3123": {
+    "tile": 5,
+    "key": "dc9611fbd841e34b3453c10f9714ecb386405bddbdab15d6dc1a95e715fb3123",
+    "settings": {
+      "sheetSize": 80,
+      "peakWaves": 2,
+      "heightGain": 1,
+      "alignment": 0.25,
+      "tau": 1.15,
+      "choppiness": 1,
+      "opposingDamping": 0.5,
+      "seed": 1337,
+      "foamBias": 0.05,
+      "foamScale": 1.3,
+      "foamRecovery": 0.7,
+      "billow": 1,
+      "spray": 0.65,
+      "motionBlur": true,
+      "shutter": 0.5,
+      "depthOfField": true,
+      "aperture": 0.22,
+      "grain": true,
+      "grainStrength": 0.018,
+      "scatter": [
+        0.004,
+        0.018,
+        0.017
+      ],
+      "absorption": [
+        0.4,
+        0.12,
+        0.1
+      ],
+      "emberWaterGain": 0.18,
+      "glintStrength": 0.2,
+      "studioHighlightStrength": 0.45
+    },
+    "brewing": {
+      "warmCycles": 2,
+      "frameZeroMaxDiff": [
+        null,
+        0.9838104248046875,
+        0
+      ],
+      "steps": 363
+    },
+    "sizes": {
+      "foam": 41140390,
+      "spray": 913574
+    }
+  },
+  "2e12784ea06b2628938e979b05085eef9141cca5def04364c52d7a7b8755fb60": {
+    "tile": 6,
+    "key": "2e12784ea06b2628938e979b05085eef9141cca5def04364c52d7a7b8755fb60",
+    "settings": {
+      "sheetSize": 80,
+      "peakWaves": 2,
+      "heightGain": 1.35,
+      "alignment": 0.25,
+      "tau": 1.15,
+      "choppiness": 1,
+      "opposingDamping": 0.5,
+      "seed": 1337,
+      "foamBias": 0.05,
+      "foamScale": 1.3,
+      "foamRecovery": 0.7,
+      "billow": 1,
+      "spray": 0.65,
+      "motionBlur": true,
+      "shutter": 0.5,
+      "depthOfField": true,
+      "aperture": 0.22,
+      "grain": true,
+      "grainStrength": 0.018,
+      "scatter": [
+        0.004,
+        0.018,
+        0.017
+      ],
+      "absorption": [
+        0.4,
+        0.12,
+        0.1
+      ],
+      "emberWaterGain": 0.18,
+      "glintStrength": 0.2,
+      "studioHighlightStrength": 0.45
+    },
+    "brewing": {
+      "warmCycles": 2,
+      "frameZeroMaxDiff": [
+        null,
+        1.282470703125,
+        0
+      ],
+      "steps": 363
+    },
+    "sizes": {
+      "foam": 42919053,
+      "spray": 929756
+    }
+  },
+  "428da0785b0b65b4eb547847d86b69cc74ba6d62fbcc89914b755087408f3d37": {
+    "tile": 7,
+    "key": "428da0785b0b65b4eb547847d86b69cc74ba6d62fbcc89914b755087408f3d37",
+    "settings": {
+      "sheetSize": 80,
+      "peakWaves": 3,
+      "heightGain": 0.72,
+      "alignment": 0.25,
+      "tau": 1.15,
+      "choppiness": 1,
+      "opposingDamping": 0.5,
+      "seed": 1337,
+      "foamBias": 0.05,
+      "foamScale": 1.3,
+      "foamRecovery": 0.7,
+      "billow": 1,
+      "spray": 0.65,
+      "motionBlur": true,
+      "shutter": 0.5,
+      "depthOfField": true,
+      "aperture": 0.22,
+      "grain": true,
+      "grainStrength": 0.018,
+      "scatter": [
+        0.004,
+        0.018,
+        0.017
+      ],
+      "absorption": [
+        0.4,
+        0.12,
+        0.1
+      ],
+      "emberWaterGain": 0.18,
+      "glintStrength": 0.2,
+      "studioHighlightStrength": 0.45
+    },
+    "brewing": {
+      "warmCycles": 2,
+      "frameZeroMaxDiff": [
+        null,
+        0.733154296875,
+        0
+      ],
+      "steps": 363
+    },
+    "sizes": {
+      "foam": 39556904,
+      "spray": 896428
+    }
+  },
+  "ae084cfe0400dd04e3112d2e6fe793ed50c00a01d287400dd1dd4fb88a727d60": {
+    "tile": 8,
+    "key": "ae084cfe0400dd04e3112d2e6fe793ed50c00a01d287400dd1dd4fb88a727d60",
+    "settings": {
+      "sheetSize": 80,
+      "peakWaves": 3,
+      "heightGain": 1,
+      "alignment": 0.25,
+      "tau": 1.15,
+      "choppiness": 1,
+      "opposingDamping": 0.5,
+      "seed": 1337,
+      "foamBias": 0.05,
+      "foamScale": 1.3,
+      "foamRecovery": 0.7,
+      "billow": 1,
+      "spray": 0.65,
+      "motionBlur": true,
+      "shutter": 0.5,
+      "depthOfField": true,
+      "aperture": 0.22,
+      "grain": true,
+      "grainStrength": 0.018,
+      "scatter": [
+        0.004,
+        0.018,
+        0.017
+      ],
+      "absorption": [
+        0.4,
+        0.12,
+        0.1
+      ],
+      "emberWaterGain": 0.18,
+      "glintStrength": 0.2,
+      "studioHighlightStrength": 0.45
+    },
+    "brewing": {
+      "warmCycles": 2,
+      "frameZeroMaxDiff": [
+        null,
+        0.9852752685546875,
+        0
+      ],
+      "steps": 363
+    },
+    "sizes": {
+      "foam": 41051451,
+      "spray": 906953
+    }
+  },
+  "21cb9632cba669043de6b8a82872270628e1e777524687edc213beb9859ba79a": {
+    "tile": 9,
+    "key": "21cb9632cba669043de6b8a82872270628e1e777524687edc213beb9859ba79a",
+    "settings": {
+      "sheetSize": 80,
+      "peakWaves": 3,
+      "heightGain": 1.35,
+      "alignment": 0.25,
+      "tau": 1.15,
+      "choppiness": 1,
+      "opposingDamping": 0.5,
+      "seed": 1337,
+      "foamBias": 0.05,
+      "foamScale": 1.3,
+      "foamRecovery": 0.7,
+      "billow": 1,
+      "spray": 0.65,
+      "motionBlur": true,
+      "shutter": 0.5,
+      "depthOfField": true,
+      "aperture": 0.22,
+      "grain": true,
+      "grainStrength": 0.018,
+      "scatter": [
+        0.004,
+        0.018,
+        0.017
+      ],
+      "absorption": [
+        0.4,
+        0.12,
+        0.1
+      ],
+      "emberWaterGain": 0.18,
+      "glintStrength": 0.2,
+      "studioHighlightStrength": 0.45
+    },
+    "brewing": {
+      "warmCycles": 2,
+      "frameZeroMaxDiff": [
+        null,
+        1.284423828125,
+        0
+      ],
+      "steps": 363
+    },
+    "sizes": {
+      "foam": 42800228,
+      "spray": 925592
+    }
+  }
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,">
+  <title>Settings · Wave look</title>
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,sans-serif;background:#151719;color:#f1ede7}*{box-sizing:border-box}[hidden]{display:none!important}
+    body{margin:0}main{max-width:1500px;margin:auto;padding:26px 30px 50px}a{color:#e9b89e}button,input{font:inherit}
+    .back{display:inline-block;font-size:13px;margin-bottom:22px;text-decoration:none}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#e9b89e}
+    h1{font-size:clamp(26px,3vw,38px);font-weight:550;letter-spacing:-.04em;margin:7px 0 10px}p{color:#bcb6b0;line-height:1.55;margin:6px 0 18px}
+    .pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 8px}figure{margin:0;min-width:0}
+    .player-frame{position:relative;border:1px solid #3f4142;border-radius:4px;overflow:hidden}.role-chip{position:absolute;top:12px;left:12px;background:#151719d9;pointer-events:none}
+    .assigned .player-frame{animation:assigned .6s ease-out}@keyframes assigned{0%,35%{box-shadow:0 0 0 2px #f0b79c}100%{box-shadow:0 0 0 2px transparent}}
+    figcaption strong{font-weight:550}.weather-strip{height:37px;position:relative;margin:1px 0 14px;font-size:10px;color:#aba7a2;pointer-events:none}.weather-strip:before{content:'';position:absolute;left:0;right:0;top:22px;height:1px;background:#535253}.weather-strip span{position:absolute;top:0}.calm-anchor{left:0}.main-anchor{left:66.666667%;transform:translateX(-50%);color:#e9b89e}.storm-anchor{right:0;color:#e9b89e}.main-anchor:after,.storm-anchor:after{content:'';position:absolute;top:19px;height:7px;width:1px;background:currentColor}.main-anchor:after{left:50%}.storm-anchor:after{right:0}
+    video{width:100%;display:block;aspect-ratio:16/9;object-fit:contain;background:#0b0d0f}figcaption{padding:11px 0;font-size:14px}figcaption small{display:block;color:#aba7a2;font-size:12px;margin-top:4px}
+    .actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:4px 0 24px}button,.action{background:#252629;color:#eee7e0;border:1px solid #535253;border-radius:4px;padding:9px 13px;font-size:13px;cursor:pointer}
+    button:hover,.action:hover{border-color:#e9b89e}button:focus-visible,a:focus-visible{outline:2px solid #e9b89e;outline-offset:4px}
+    #scrub{flex:1;min-width:100px;max-width:360px;accent-color:#e9b89e}output{font:12px ui-monospace,monospace;color:#c8c1ba}
+    .axes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;font-size:12px;color:#bcb6b0;text-align:center;margin-bottom:9px}.axes strong{display:block;color:#e9e0d8;font-weight:500;font-size:13px;margin-bottom:3px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.tile{border:1px solid #3f4142;border-radius:4px;background:#1e2022;overflow:hidden;min-width:0}
+    .tile.selected{border-color:#f0b79c}.preview{border:0;padding:0;display:block;width:100%;border-radius:0;text-align:left;background:transparent}.preview video{pointer-events:none}
+    .tile-head{display:flex;align-items:center;flex-wrap:wrap;gap:7px;padding:10px 11px 6px}.number{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#343638;font-size:13px;flex-shrink:0}
+    .tile strong{font-size:13px;font-weight:550}.detail{display:block;font-size:12px;color:#b8aea6;padding:0 11px 9px}.badges{display:flex;gap:5px;flex-wrap:wrap}.badge{font-size:10px;color:#e9b89e;border:1px solid #705744;border-radius:3px;padding:2px 5px}
+    .assignments{display:flex;gap:6px;padding:0 10px 11px}.assignments button{flex:1;padding:7px 4px;font-size:11px;min-width:0}.assignments button[aria-pressed=true]{border-color:#d7a388;color:#f4cdb8;background:#3a302c}
+    #status{font-size:12px;min-height:1.6em;margin-top:16px}.foot{font-size:12px;margin-top:22px}
+    dialog{width:min(1050px,calc(100vw - 32px));max-width:calc(100vw - 32px);max-height:calc(100dvh - 32px);padding:20px;border:1px solid #535253;border-radius:5px;background:#1e2022;color:#f1ede7;overflow:auto}dialog::backdrop{background:#080b0ddd}dialog h2{font-size:20px;font-weight:550;letter-spacing:-.025em;margin:0 0 15px}dialog video{max-height:calc(100dvh - 190px)}.dialog-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}.dialog-actions .close-preview{margin-left:auto}
+    @media(max-width:700px){main{padding:20px 12px 32px}.grid,.axes{gap:7px}.pair{gap:8px}.tile-head{padding:7px 6px 4px;gap:4px}.detail{padding:0 6px 8px;font-size:10px}.tile strong{font-size:11px}.number{width:20px;height:20px;font-size:11px}.assignments{padding:0 5px 7px;gap:4px;flex-direction:column}.badges{width:100%}}
+    @media(max-width:599px){.pair{grid-template-columns:1fr}dialog{width:100vw;max-width:100vw;max-height:100dvh;margin:auto 0;padding:12px;border-left:0;border-right:0;border-radius:0}.role-chip{top:9px;left:9px}}
+    @media(max-width:500px){.axes{font-size:10px}.axes strong{font-size:12px}}
+  </style>
+</head>
+<body><main>
+  <a class="back" href="/">← Back to the ocean</a>
+  <div class="eyebrow">Floating Ocean · Settings</div><h1>Settings · Wave look</h1>
+  <p>Choose how the sea opens (Main) and what it becomes at the Storm end of the slider. Changes apply when you return to the ocean.</p>
+  <div class="pair" id="comparison">
+    <figure id="main-choice"><div class="player-frame"><video id="main-player" aria-label="Main wave look" muted playsinline loop preload="auto"></video><span class="badge role-chip" aria-hidden="true">MAIN</span></div><figcaption><strong>Main · how the sea opens</strong><small id="main-label"></small></figcaption></figure>
+    <figure id="storm-choice"><div class="player-frame"><video id="storm-player" aria-label="Storm wave look" muted playsinline loop preload="auto"></video><span class="badge role-chip" aria-hidden="true">STORM</span></div><figcaption><strong>Storm · right end of the slider</strong><small id="storm-label"></small></figcaption></figure>
+  </div>
+  <div class="weather-strip" aria-hidden="true"><span class="calm-anchor">Calm</span><span class="main-anchor">Main</span><span class="storm-anchor">Storm</span></div>
+  <div class="actions"><button type="button" id="play">Pause all</button><button type="button" id="restart">Restart together</button><input id="scrub" aria-label="Synchronized loop time" type="range" min="0" max="3.6" step=".03" value="0"><output id="clock">0.00 / 3.63 s</output><button type="button" id="reset-looks">Reset to defaults</button></div>
+  <div class="axes"><div><strong>Lower height</strong>0.72×</div><div><strong>Middle height</strong>1.00×</div><div><strong>Higher height</strong>1.35×</div></div>
+  <div class="grid" id="tiles" aria-label="Nine wave looks"></div><p id="status" role="status">Loading previews…</p>
+  <p class="foot">Rows: about 1, 2 and 3 large waves across the sheet. Columns: wave height. Colour, reflections, foam and softness are shared.</p>
+</main>
+<dialog id="preview-dialog" aria-labelledby="preview-title"><h2 id="preview-title"></h2><video id="preview-player" aria-label="Preview wave look" muted playsinline loop preload="auto"></video><div class="dialog-actions"><button type="button" data-use="main">Use as Main look</button><button type="button" data-use="storm">Use as Storm look</button><button type="button" class="close-preview" autofocus>Close</button></div></dialog>
+<script type="module" src="/src/ultra/settings-page.js"></script></body></html>

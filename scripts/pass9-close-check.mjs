@@ -1,0 +1,9 @@
+import{readFile,writeFile}from'node:fs/promises';import assert from'node:assert/strict';
+const read=async file=>JSON.parse(await readFile(file,'utf8'));
+const expected=[['output/perf/final/golden.json','complete'],['output/perf/final/quality.json','pass'],['output/perf/final/performance.json','complete'],['output/perf/anchors/seams.json','pass'],['output/playwright/pass9/preview-checks.json','pass'],['output/playwright/pass9/preview-checks-snapshot-and-record-desktop.json','pass'],['output/playwright/pass9/float-surface-checks.json','pass'],['output/playwright/pass9/ball-trace/trace.json','pass'],['output/playwright/storm-box/lab-checks.json','allPassed'],['output/perf/live-velocity/quality.json','pass'],['output/perf/built-check.json','pass'],['output/perf/artifacts.json','pass']];
+const checks={};for(const[file,key]of expected){const result=await read(file);assert.equal(result[key],true,file);checks[file]=true;}
+const anchors=await read('output/perf/anchors/quality.json');assert(anchors.main.pass&&anchors.storm.pass);
+const builds=await read('output/perf/builds.json');assert(builds.typecheck&&builds.mainBuild&&builds.labBuild&&builds.noticesMatch);const notice=await readFile('THIRD_PARTY_NOTICES.md');for(const dir of ['dist','dist-lab'])assert((await readFile(`${dir}/THIRD_PARTY_NOTICES.md`)).equals(notice));
+assert.equal((await readFile('src/entry.ts','utf8')).trim(),"import './ultra/main.js';");
+const status={};for(const pathname of ['/','/settings.html','/compare.html']){const r=await fetch(`http://localhost:4103${pathname}`);status[pathname]=r.status;assert(r.ok);}
+await writeFile('output/perf/pass9-verification.json',JSON.stringify({pass:true,checks,builds,noticesMatch:true,status},null,2));console.log(JSON.stringify({pass:true,checks:expected.length+2,status}));
